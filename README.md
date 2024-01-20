@@ -21,3 +21,7 @@ atributos
 elemementos    (estos dos misma jerarquía)
 pseudoelementos
 
+*Modelado en cajas*
+
+Elementos en bloque y en linea
+-a los elementos en bloque se les puede dar width y height, a los que están en línea no. Display permite transformar el valor por defecto del elemento

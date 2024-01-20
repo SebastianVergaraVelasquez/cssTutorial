@@ -1,0 +1,23 @@
+h2{
+    display: inline-block;
+    background-color: lightgreen;
+    padding: 10px 50px;
+    max-width: 100px;
+    max-height: 100px;
+    box-sizing: border-box; 
+    /* box sizing border box hace que la caja mantenga el valor original de su tamaño y no se vea afectada por el padding */
+} 
+
+p{
+    background-color: aqua;
+    margin: 50px 30px 20px 80px;
+    border: 30px solid;
+    border-color: black;
+    /* border-radius: 2rem; */
+    /* box-shadow: 2px 10px 4px 0px blue; */
+    outline: 10px solid red;
+    /* outline demarca el elemento, pero no redimensiona*/
+    /* box-shadow x y tamaño-sombra tamaño-borde color */
+    /* margin da la separación entre cajas */
+}
+
