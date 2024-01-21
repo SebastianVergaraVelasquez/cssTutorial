@@ -1,16 +1,19 @@
 h2{
+    font-size: 1em;
     display: inline-block;
     background-color: lightgreen;
-    padding: 10px 50px;
+    padding: 1px 5px;
     max-width: 100px;
     max-height: 100px;
     box-sizing: border-box; 
     /* box sizing border box hace que la caja mantenga el valor original de su tamaño y no se vea afectada por el padding */
 } 
 
-p{
+p{  
+    top:20px;
+    position: sticky;
     background-color: aqua;
-    margin: 50px 30px 20px 80px;
+    margin: 5px 3px 2px 8px;
     border: 30px solid;
     border-color: black;
     /* border-radius: 2rem; */
@@ -21,3 +24,87 @@ p{
     /* margin da la separación entre cajas */
 }
 
+.contenedor{
+    width: 200px;
+}
+
+.contenedor__div--1{
+    position: relative;
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    background-color: yellow ;
+    position: static; 
+    /* posicion por defecto */
+}
+
+.contenedor__div--2{
+    position: absolute;
+    /* absolute hace que el espacio que ocupaba ese elemento ya no sea reservado */
+    /* fixed es como un absolute, matiene fijo el elemento al hacer movimientos de scroll */
+    /* sticky es una combinación de relative y fixed, si un elemento tiene esta propiedad al hacer scroll y llegar hasta él, se quedará fijado en la pantalla */
+    width: 120px;
+    height: 120px;
+    background-color: green ;
+}
+
+.contenedor__div--3{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    /* no si top y left están definidos no importan los valores de right y bottom */
+    width: 120px;
+    height: 120px;
+    background-color:blue;
+}
+
+.contenedor__div--4{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: static; 
+}
+
+.contenedor-centro{
+    background-color: blueviolet;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.caja{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+}
+
+.contenedor-centro div{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.cajita1{
+    top: 0;
+}
+
+.cajita2{
+    top: 0;
+    right: 0;
+}
+
+.cajita3{
+    bottom: 0;
+}
+
+.cajita4{
+    bottom: 0;
+    right: 0;
+}
