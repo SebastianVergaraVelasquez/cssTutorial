@@ -1,0 +1,69 @@
+/* los psudoelementos solo funcionan en elementos con display diferente a inline  */
+
+.texto::first-line{
+    color: blue;
+}
+
+.texto::first-letter{
+    color: brown;
+}
+
+input::placeholder{
+    color: blue;
+    font-size: 20px;
+    /* al placeholder se le pueden dar propiedades */
+}
+
+.texto::selection{
+    background-color: burlywood;
+    /* propiedades que se ven cuando se selecciona con el cursor */
+}
+
+.texto::before{
+    content: "Soy de bucaramanga";
+    color: greenyellow;
+}
+
+.texto::after{
+    content: "milagrosa redención";
+    color: blueviolet;
+}
+
+/* pseudoclases */
+
+/* hover funciona en cualquier elemento - El evento es cuando el cursor está sobre el elemento */
+
+.caja1{
+    background-color: darksalmon;
+    width: 200px;
+    height: 200px;
+}
+
+.caja1:hover{
+    background-color: aqua;
+    height: 100px;
+}
+
+/* link funciona para las etiquetas a */
+
+.linkprueba:link{
+    color: greenyellow;
+    /* si doy al enlace y no devuelve una respuesta el color no va a cambiar */
+}
+
+.linkprueba:visited{
+    color: coral;
+}
+
+/* active funciona al hacer clic */
+
+.caja1:active{
+    background-color: cadetblue;
+    width: 800px;
+}
+
+/* focus funciona para input */
+
+input:focus{
+    background-color: cornflowerblue;
+}

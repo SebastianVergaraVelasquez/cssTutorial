@@ -25,3 +25,23 @@ pseudoelementos
 
 Elementos en bloque y en linea
 -a los elementos en bloque se les puede dar width y height, a los que están en línea no. Display permite transformar el valor por defecto del elemento
+
+*propiedades*
+
+overflow: si un elemento supera las dimensiones de su contenedor, dependiendo del valor que se le de a overflow opera de manera distinta sobre el contenido sobrante.
+
+    overflow: auto  genera barras de scroll en el eje donde el contenido sobresalga del contenedor
+    overflow: scroll genera barras de scroll en ambos ejes
+    overflow: hidden oculta el contenido que salga del contenedor
+    overflow-y / overflow-x se pueden manejar los tres valores de overflow en cada eje por separado
+
+float: El mejor uso que se puede dar es para que en un contenedor con texto y una imagen, al darle float a la imagen pareciera que el texto rodeara a la imagen.
+
+object-fit: Acomoda la imagen dentro de un contenedor
+    none: da la imagen del tamaño original
+    cover: ajusta la imagen al contenedor
+    contain: ajusta el contenedor al tamaño de la imagen
+
+object-position: permite desplazar la imagen cierta medida respecto a cada eje
+
+cursor: permite seleccionar el tipo de cursor al ubicarse sobre el elemento
