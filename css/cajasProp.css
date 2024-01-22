@@ -25,6 +25,7 @@ p{
 }
 
 .contenedor{
+    display: inline;
     width: 200px;
 }
 
