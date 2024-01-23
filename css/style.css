@@ -1,0 +1,54 @@
+ /* Ejemplo de ubicación de elementos con display:flex  */
+
+*{
+    margin: 0;
+}
+
+.caja{
+    width: 300px;
+    height: 200px;
+    outline: 1px solid red;
+    margin: 30px;
+}
+.fila1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caja-izquierda{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.caja-derecha{
+    display: flex;
+    align-items: end;
+}
+
+.fila2{
+    display: flex;
+    justify-content: center;
+    margin: 50  px 0px;
+}
+
+.caja-fila2{
+    display: flex;
+    align-items: end;
+}
+
+.caja-fila3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cajita{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(120, 226, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
