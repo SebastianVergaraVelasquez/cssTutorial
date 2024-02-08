@@ -40,8 +40,10 @@
 
 .caja-fila3{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-items: center;
     justify-content: space-between;
+    box-shadow: 1px 1px 1px;
 }
 .cajita{
     width: 100px;
@@ -50,5 +52,70 @@
     display: flex;
     justify-content: center;
     align-items: center ;
+}
+
+.menuProfile{
+    background-color: #fff;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    width: 80px;
+    display: none;
+}
+
+/* ~ se usa para elementos hermanos
+
+El combinador + selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento sigue directamente al primero y ambos comparten el mismo elemento padre.
+
+Sintaxis: A + B
+
+Ejemplo: La regla h2 + p se aplicará a todos los elementos <p> que siguen directamente a un elemento <h2> (en-US)
+
+El combinador > selecciona los elementos que son hijos directos del primer elemento.
+
+Sintaxis: A > B
+
+Ejemplo: La regla ul > li se aplicará a todos los elementos <li> que son hijos directos de un elemento <ul>.
+
+Combinador de descendientes
+El combinador (espacio) selecciona los elementos que son descendientes del primer elemento.
+
+Sintaxis: A B
+
+Ejemplo: La regla div span se aplicará a todos los elementos <span> que están dentro de un elemento <div>..
+
+<a href="#desp" class="navTarget" style="color: #469778;font-size: 2rem; text-decoration: none;">&#8801</a>
+<div class="menu" id="desp">                
+    <a href="#home" class="aMenu">Home</a>
+    <a href="#" class="cerrar-menu" style="color: #469778;font-size: 2rem; text-decoration: none">&#215</a>
+</div>
+
+ .navTarget{
+        display: block;
+    }
+    .menu{
+        z-index: 1;        
+        clip-path: circle(0% at top right);
+        transition: clip-path 0.6s;
+    }
+    .menu:target{
+        clip-path: circle(150% at top right);
+    }
+    .cerrar-menu{      
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+ */
+
+#profile:checked ~ .menuProfile{
+    display: block;
+}
+
+.body:has(#menu:checked){
+    grid-template-columns: 1fr 20px 2fr 40px;
+}
+#menu:not(:checked) ~ .nav .logo h2{
+    display: none;
 }
 
